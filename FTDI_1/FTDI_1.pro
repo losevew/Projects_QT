@@ -20,3 +20,9 @@ HEADERS  += mainwindow.h \
     ftd2xx.h
 
 FORMS    += mainwindow.ui
+
+
+
+INCLUDEPATH += $$PWD/.
+DEPENDPATH += $$PWD/.
+
