@@ -27,7 +27,7 @@ void MainWindow::on_pushButtonConvert_clicked()
    unsigned int data;
    unsigned char databyt;
    bool ok;
-   int k, l ;
+   unsigned int k, l ;
    str = ui->lineEditData->text();
    data = str.toUInt(&ok,16);
    databyt = 0;
@@ -44,7 +44,7 @@ void MainWindow::on_pushButtonConvert_clicked()
 
            str+="1";
            databyt = 0x01 << SDA;
-           dataout = dataout+ tmp.setNum(databyt);
+           dataout = dataout + tmp.setNum(databyt);
            databyt |= 0x01 << SCL;
            dataout = dataout + tmp.setNum(databyt);
            databyt ^= 0x01 << SCL;

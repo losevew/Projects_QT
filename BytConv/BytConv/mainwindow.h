@@ -6,6 +6,8 @@
 #define SDA  0
 #define SCL  1
 
+extern QString str, tmp, dataout ;
+
 namespace Ui {
 class MainWindow;
 }
